@@ -185,7 +185,7 @@ behaviors {
             #binding-cells = <2>;
             tapping-term-ms = <my_tapping_term>;
             quick-tap-ms = <90>;
-            global-quick-tap;
+//            global-quick-tap;
             flavor = "tap-preferred";
             bindings = <&tion>, <&Th>;
         };
@@ -195,7 +195,7 @@ behaviors {
             #binding-cells = <2>;
             tapping-term-ms = <my_tapping_term>;
             quick-tap-ms = <90>;
-            global-quick-tap;
+//            global-quick-tap;
             flavor = "tap-preferred";
             bindings = <&sion>, <&Sh>;
         };
@@ -205,7 +205,7 @@ behaviors {
             #binding-cells = <2>;
             tapping-term-ms = <my_tapping_term>;
             quick-tap-ms = <90>;
-            global-quick-tap;
+//            global-quick-tap;
             flavor = "tap-preferred";
             bindings = <&ght>, <&Gh>;
         };
