@@ -1,9 +1,0 @@
-build/
-zmk/
-zephyr/
-modules/
-tools/
-.west/
-config/.DS_Store
-config/corne-ish_zen copy.keymap
-.DS_Store
