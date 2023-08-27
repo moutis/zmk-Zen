@@ -58,12 +58,12 @@ LB5 │  V   P   L   D   /* │ │  -+   U   O   Y   F  │ RB5
 #define RM4 22
 #define RM5 23
 
-#define LB0 28
-#define LB1 27
-#define LB2 26
-#define LB3 25
-#define LB4 24
-#define LB5 29
+#define LB0 29
+#define LB1 28
+#define LB2 27
+#define LB3 26
+#define LB4 25
+#define LB5 24
 #define RB0 30
 #define RB1 31
 #define RB2 32

@@ -10,7 +10,7 @@ LB5 │  V   P   L   D   /* │ │  -+   U   O   Y   F  │ RB5
 
 
                 l_alpha {
-                        label = "l_alpha";
+                        label = "HD-Vv";
                         bindings = <
 
 &kp ESC  &ak_x        &ak_w      &ak_m     &ak_g     &DqtLbkt            &HashDllr   &DotColn   &SqtRbkt       &ak_j      &ak_b &kp BSPC
