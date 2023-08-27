@@ -1,4 +1,4 @@
-![Corne-ish Zen Logo](zenlogo.png)
+![zen pic](zen.jpg)
 
 [**Hands Down**](http://handsdownlayout.com) [*Vibranium*](https://sites.google.com/alanreiser.com/handsdown/home/hands-down-neu#h.eyvjpfoqjy65) (a.k.a Neu-vv) on a [Cornish-Zen](https://www.reddit.com/r/ErgoMechKeyboards/comments/reyulp/my_new_zen/) using just the github actions.
 
