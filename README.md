@@ -4,7 +4,7 @@ Tinkering with putting **Hands Down** (*Vibranium*, a.k.a Neu-vv) on a Cornish-Z
 
 ```
      ╭─────────────────────╮ ╭──────────────────────╮
-ESC  │  X   W   M   G  "\[  │ │  #$  .:  ']   J   B  │ BSP
+ESC  │  X   W   M   G  "[  │ │  #$  .:  ']   J   B  │ BSP
 TAB  │  S   C   N   T   K  | |  ,;   A   E   I   H  │ Tg(Num)
 LSFT │  V   P   L   D   /* │ │  -+   U   O   Y   F  │ RSFT
      ╰──────╮  App BSP  R  │ │  SPC RET  TAB ╭──────╯
