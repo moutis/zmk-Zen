@@ -7,7 +7,7 @@ Tinkering with putting **Hands Down** (*Vibranium*, a.k.a Neu-vv) on a Cornish-Z
 ESC  │  X   W   M   G  "[  │ │  #$  .:  ']   J   B  │ BSP
 TAB  │  S   C   N   T   K  | |  ,;   A   E   I   H  │ Tg(Num)
 LSFT │  V   P   L   D   /* │ │  -+   U   O   Y   F  │ RSFT
-     ╰──────╮  App BSP  R  │ │  SPC RET  TAB ╭──────╯
+     ╰──────╮  App BSP  R  │ │  SPC RET TAB  ╭──────╯
             ╰──────────────╯ ╰───────────────╯
 ```
 *Vibranium* is great with all the other smart behaviors, and is not advized without some (esp `H` digraphs…combos to send TH,CH,WH,SH,GH,PH bigrams). Currently I have most of the "essential" combos, and a ZMK take on *Adaptive Keys* (using macros and sticky layers) and *Linger Keys* (using macros and hold-tap behaviors). They behave a bit differently than in QMK, but are quite usable. Eventually I hope to deploy a properly coded solution to these features so they have similar responsiveness as in QMK.
