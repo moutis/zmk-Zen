@@ -1,5 +1,3 @@
-# Corne-ish Zen Custom Configuration
-
 ![Corne-ish Zen Logo](zenlogo.png)
 
 Tinkering with putting Hands Down (Vibranium, a.k.a Neu-vv) on a Cornish-Zen using just the github actions.
