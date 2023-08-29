@@ -14,7 +14,8 @@ LSFT │  V   F   L   D   /* │ │  -+   U   O   Y   P  │ RSFT
 
 Currently building only for a Mac (hard coded for gui instead of ctrl, and some mac specific keycodes). My [***Semantic Keys***](https://sites.google.com/alanreiser.com/handsdown#h.7mehnxbqcx2s) feature for platform independence isn't yet fully fleshed out on my QMK implementations, and will reguire more invasive work for ZMK, so this too is for later.
 
-Thanks to [jcmkk3](https://github.com/jcmkk3) for the adaptive layers idea, and many others for the endless creativity and support. And of course, to [Pete Johanson](https://github.com/petejohanson) and contributors for ZMK, and to [Darryldh (lowprokb)](https://github.com/LOWPROKB) for the very sweet [Corne-ish Zen](https://github.com/LOWPROKB/zmk-config-Corne-ish-Zen) board. Also thanks to [caksoylar](https://github.com/caksoylar) for the great keymap visualization tool, [keymap drawer](https://github.com/caksoylar/keymap-drawer). Below is a much simplified view of my zen keymap (no adaptive or config layers, many combos not shown).
-
+ Below is a much simplified view of my zen keymap (no adaptive or config layers, many combos not shown).
 
 ![zen keymap](zen_keymap.png)
+
+Thanks to [jcmkk3](https://github.com/jcmkk3) for the idea to implement adaptives via sticky layers, and many others for the endless creativity and support. Of course, huge thanks to [Pete Johanson](https://github.com/petejohanson) (and contributors) for ZMK, and to [Darryldh (lowprokb)](https://github.com/LOWPROKB) for the rather amazing [Corne-ish Zen](https://github.com/LOWPROKB/zmk-config-Corne-ish-Zen) board. Also thanks to [caksoylar](https://github.com/caksoylar) for the great keymap visualization tool, [keymap drawer](https://github.com/caksoylar/keymap-drawer) used to make the keymap images above.
