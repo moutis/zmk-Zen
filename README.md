@@ -1,8 +1,8 @@
-# **Hands Down** ![zen pic](zenlogo.png)
+# **Hands Down** on ![zen pic](zenlogo.png)
 
 ![zen pic](zen.jpg)
 
-[**Hands Down**](http://handsdownlayout.com) [*Vibranium*](https://sites.google.com/alanreiser.com/handsdown/home/hands-down-neu#h.78qav8n932m7) (a.k.a Neu-vv) on a [Cornish-Zen](https://www.reddit.com/r/ErgoMechKeyboards/comments/reyulp/my_new_zen/) using just the ZMK behaviors, no custom code.
+[**Hands Down**](http://handsdownlayout.com) [*Vibranium*](https://sites.google.com/alanreiser.com/handsdown/home/hands-down-neu#h.78qav8n932m7) (a.k.a Neu-vv) on a [Cornish-Zen](https://www.reddit.com/r/ErgoMechKeyboards/comments/reyulp/my_new_zen/), including all my add-on features, using just the (*very customized*) ZMK behaviors, no custom code.
 
 ```
      ╭─────────────────────╮ ╭──────────────────────╮
