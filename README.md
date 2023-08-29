@@ -14,6 +14,7 @@ LSFT │  V   F   L   D   /* │ │  -+   U   O   Y   P  │ RSFT
 
 Currently building only for a Mac (hard coded for gui instead of ctrl, and some mac specific keycodes). My [***Semantic Keys***](https://sites.google.com/alanreiser.com/handsdown#h.7mehnxbqcx2s) feature for platform independence isn't yet fully fleshed out on my QMK implementations, and will reguire more invasive work for ZMK, so this too is for later.
 
-Thanks to [jcmkk3](https://github.com/jcmkk3) for the adaptive layers idea, and many others for the endless creativity and support. 
+Thanks to [jcmkk3](https://github.com/jcmkk3) for the adaptive layers idea, and many others for the endless creativity and support. And of course, to [Pete Johanson](https://github.com/petejohanson) and contributors for ZMK, and to [Darryldh (lowprokb)](https://github.com/LOWPROKB) for the very sweet [Corne-ish Zen](https://github.com/LOWPROKB/zmk-config-Corne-ish-Zen) board design. And thanks to [caksoylar](https://github.com/caksoylar) for the great keymap visualization tool, [keymap drawer](https://github.com/caksoylar/keymap-drawer). Below is a much simplified view of my zen keymap.
 
-And of course, to [Pete Johanson](https://github.com/petejohanson) and contributors for ZMK, and to [Darryldh (lowprokb)](https://github.com/LOWPROKB) for the very sweet [Corne-ish Zen](https://github.com/LOWPROKB/zmk-config-Corne-ish-Zen) board design.
+
+![zen keymap](zen_keymap.png)
