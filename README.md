@@ -1,4 +1,4 @@
-# **Hands Down** *Zen*
+# **Hands Down** ![zen pic](zenlogo.png)
 
 ![zen pic](zen.jpg)
 
