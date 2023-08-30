@@ -5,7 +5,6 @@
 //  Created by Alan on 7/24/22.
 //
 
-#define ___  &trans
 
 /*       KEY POSITIONS for Corne-ish Zen
     ╭─────────────────────╮ ╭─────────────────────╮
@@ -24,7 +23,7 @@ LB5 │ LB4 LB3 LB2 LB1 LB0 │ │ RB0 RB1 RB2 RB3 RB4 │ RB5
             ╰─────────────╯ ╰─────────────╯
 */
 /*  Base (alpha) Layer  Hands Down Vibranium-vv
-        Building for a 34 key board
+    Building for a 36/42 key board
     ╭─────────────────────╮ ╭──────────────────────╮
 LT5 │  X   W   M   G  "[  │ │  #$  .:  ']   J   B  │ RT5
 LM5 │  S   C   N   T   K  | |  ,;   A   E   I   H  │ RM5
