@@ -54,7 +54,6 @@ combos {
 COMBO_ANY(enmode, &kp LANG2,    LM3 LM2 LM1)
 COMBO_ANY(jpmode, &kp LANG1,    RM1 RM2 RM3)
 COMBO_ANY(settings, &mo l_cfg,  RH1 RH2) // get the settings/media layer from anywhere
-//COMBO_ANY(appswitch, &kp RG(TAB), LT1 LT0) // App switch
 COMBO_ANY(appswitch, &AppSwitch, LT1 LT0) // App switch
 COMBO_LAYER(docaps, &caps_word, LM2 LM1 RM1 RM2, l_alpha) // CAPSWORD
 COMBO_LAYER(capslk, &kp CAPS, LM3 LM2 RM2 RM3, l_alpha) // CAPS LOCK
@@ -67,7 +66,7 @@ COMBO_ANY(entr, &kp RETURN,     LB1 LB0)
 COMBO_ANY(tab,  &kp TAB,        LT4 LT3)
 COMBO_ANY(spce, &kp SPACE,      LM1 LM0)
 COMBO_ANY(esc,  &kp ESC,        LM4 LM1)
-COMBO_LAYER(sall, &kp LG(A),      LB4 LB1, l_alpha)
+COMBO_ANY(sall, &kp LG(A),      LB4 LB1)
 COMBO_LAYER(selword, &m_selword,  LB4 LB0, l_alpha)
 COMBO_ANY(undo, &kp LG(Z),      LB4 LB3)
 COMBO_ANY(redo, &kp LG(LS(Z)),  LB4 LB3 LB2)
@@ -134,7 +133,7 @@ COMBO_LAYER(pnIll, &typePnIll,      RM3 LB2, l_alpha) // "I'll "
 COMBO_LAYER(pnId, &typePnId,        RM3 LB1, l_alpha) // "I'd "
 COMBO_LAYER(pnIve, &typePnIve,      RM3 LB0, l_alpha) // "I've "
 
-COMBO_LAYER(pnYoure, &typePnYoure,  RB3 LH1, l_alpha) // "You're "
+COMBO_LAYER(pnYoure, &typePnYoure,  RB3 LR3, l_alpha) // "You're "
 COMBO_LAYER(pnYoull, &typePnYoull,  RB3 LB2, l_alpha) // "You'll "
 COMBO_LAYER(pnYoud, &typePnYoud,    RB3 LB1, l_alpha) // "You'd "
 COMBO_LAYER(pnYouve, &typePnYouve,  RB3 LB0, l_alpha) // "You've "
