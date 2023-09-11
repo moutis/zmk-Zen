@@ -133,7 +133,7 @@ COMBO_LAYER(pnIll, &typePnIll,      RM3 LB2, l_alpha) // "I'll "
 COMBO_LAYER(pnId, &typePnId,        RM3 LB1, l_alpha) // "I'd "
 COMBO_LAYER(pnIve, &typePnIve,      RM3 LB0, l_alpha) // "I've "
 
-COMBO_LAYER(pnYoure, &typePnYoure,  RB3 LR3, l_alpha) // "You're "
+COMBO_LAYER(pnYoure, &typePnYoure,  RB3 LB3, l_alpha) // "You're "
 COMBO_LAYER(pnYoull, &typePnYoull,  RB3 LB2, l_alpha) // "You'll "
 COMBO_LAYER(pnYoud, &typePnYoud,    RB3 LB1, l_alpha) // "You'd "
 COMBO_LAYER(pnYouve, &typePnYouve,  RB3 LB0, l_alpha) // "You've "
