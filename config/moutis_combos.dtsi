@@ -11,13 +11,13 @@
     bindings = <BINDINGS>; \
     key-positions = <KEYPOS>; \
     layers = <LAYERS>; \
-    timeout-ms = <34>; \
+    timeout-ms = <50>; \
 };
 #define COMBO_ANY(NAME, BINDINGS, KEYPOS) \
   combo_##NAME { \
     bindings = <BINDINGS>; \
     key-positions = <KEYPOS>; \
-    timeout-ms = <50>; \
+    timeout-ms = <34>; \
 };
 
 /*       KEY POSITIONS for Corne-ish Zen
