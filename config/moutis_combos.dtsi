@@ -48,6 +48,15 @@ LSFT │  V   P   L   D   /* │ │  -+   U   O   Y   F  │ RSFT
 combos {
     compatible = "zmk,combos";
 
+//
+// control/modes
+//
+COMBO_ANY(enmode, &kp LANG2,    LM3 LM2 LM1)
+COMBO_ANY(jpmode, &kp LANG1,    RM1 RM2 RM3)
+COMBO_ANY(settings, &mo l_cfg,  RH1 RH2) // get the settings/media layer from anywhere
+COMBO_ANY(appswitch, &AppSwitch, LT1 LT0) // App switch
+COMBO_LAYER(docaps, &caps_word, LM2 LM1 RM1 RM2, l_alpha) // CAPSWORD
+COMBO_LAYER(capslk, &kp CAPS, LM3 LM2 RM2 RM3, l_alpha) // CAPS LOCK
 
 //
 // Editing actions (&whitespace)
@@ -154,16 +163,5 @@ COMBO_LAYER(numCENT, &kp LA(N4),     RT0 RT1, l_num) // ¢
 COMBO_LAYER(numEURO, &kp LS(LA(N2)), RT2 RT3, l_num) // €
 COMBO_LAYER(numYEN, &kp LA(Y),       RT3 RT4, l_num) // ¥
 COMBO_LAYER(numBPND, &kp LA(N3),     RT1 RT3, l_num) // £
-
-
-//
-// control/modes
-//
-COMBO_ANY(enmode, &kp LANG2,    LM3 LM2 LM1)
-COMBO_ANY(jpmode, &kp LANG1,    RM1 RM2 RM3)
-COMBO_ANY(settings, &mo l_cfg,  RH1 RH2) // get the settings/media layer from anywhere
-COMBO_ANY(appswitch, &AppSwitch, LT1 LT0) // App switch
-COMBO_LAYER(docaps, &caps_word, LM2 LM1 RM1 RM2, l_alpha) // CAPSWORD
-COMBO_LAYER(capslk, &kp CAPS, LM3 LM2 RM2 RM3, l_alpha) // CAPS LOCK
 
 };
