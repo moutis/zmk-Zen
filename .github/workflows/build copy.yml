@@ -6,7 +6,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     container:
-      image: zmkfirmware/zmk-build-arm:stable
+      image: zmkfirmware/zmk-build-arm:2.5
     name: Build
     steps:
       - name: Checkout
@@ -41,7 +41,7 @@ jobs:
       - name: Corne-ish Zen Left Kconfig file
         run: cat build/zephyr/.config | grep -v "^#" | grep -v "^$"
       - name: Rename zmk.uf2
-        run: cp build/zephyr/zmk.uf2 corneish_zen_stable_left.uf2
+        run: cp build/zephyr/zmk.uf2 corneish_zen_left.uf2
       - name: Archive (Corne-ish Zen Left)
         uses: actions/upload-artifact@v2
         with:
@@ -52,7 +52,7 @@ jobs:
       - name: Corne-ish Zen Right Kconfig file
         run: cat build/zephyr/.config | grep -v "^#" | grep -v "^$"
       - name: Rename zmk.uf2
-        run: cp build/zephyr/zmk.uf2 corneish_zen_stable_right.uf2
+        run: cp build/zephyr/zmk.uf2 corneish_zen_right.uf2
       - name: Archive (Corne-ish Zen Right)
         uses: actions/upload-artifact@v2
         with:
