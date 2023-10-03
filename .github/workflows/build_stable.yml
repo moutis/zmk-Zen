@@ -46,7 +46,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: firmware
-          path: corneish_zen_left.uf2
+          path: corneish_zen_v1_left.uf2
       - name: West Build (Corne-ish Zen Right)
         run: west build --pristine -s zmk/app -b corneish_zen_v1_right -- -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
       - name: Corne-ish Zen Right Kconfig file
@@ -57,4 +57,4 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: firmware
-          path: corneish_zen_right.uf2
+          path: corneish_zen_v1_right.uf2
