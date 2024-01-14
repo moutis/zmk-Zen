@@ -35,15 +35,6 @@ LB5  │ LB4 LB3 LB2 LB1 LB0 │ │ RB0 RB1 RB2 RB3 RB4 │ RB5
      ╰───────╮ LH3 LH2 LH1 | | RH1 RH2 RH3 ╭───────╯
              ╰─────────────╯ ╰─────────────╯
 */
-/*  Base (alpha) Layer  Hands Down Vibranium-vv
-    Building for a 36/42 key board
-     ╭─────────────────────╮ ╭──────────────────────╮
-ESC  │  X   W   M   G  "[  │ │  #$  .:  ']   J   B  │ BSP
-TAB  │  S   C   N   T   K  | |  ,;   A   E   I   H  │ Tg(Num)
-LSFT │  V   P   L   D   /* │ │  -+   U   O   Y   F  │ RSFT
-     ╰──────╮  App BSP  R  │ │  SPC RET TAB  ╭──────╯
-            ╰──────────────╯ ╰───────────────╯
-*/
 
 combos {
     compatible = "zmk,combos";
@@ -64,15 +55,15 @@ COMBO_LAYER(capslk, &kp CAPS, LM3 LM2 RM2 RM3, l_alpha) // CAPS LOCK
 COMBO_ANY(Gent, &kp LG(RETURN), LB2 LB1 LB0)
 COMBO_ANY(entr, &kp RETURN,     LB1 LB0)
 COMBO_ANY(tab,  &kp TAB,        LT4 LT3)
+COMBO_ANY(stab, &kp LS(TAB),    LT4 LT3 LT2)
 COMBO_ANY(spce, &kp SPACE,      LM1 LM0)
 COMBO_ANY(esc,  &kp ESC,        LM4 LM1)
 COMBO_ANY(sall, &kp LG(A),      LB4 LB1)
 COMBO_LAYER(selword, &m_selword,  LB4 LB0, l_alpha)
 COMBO_ANY(undo, &kp LG(Z),      LB4 LB3)
 COMBO_ANY(redo, &kp LG(LS(Z)),  LB4 LB3 LB2)
-COMBO_ANY(cut,  &kp LG(X),      LB4 LB2)
 COMBO_ANY(copy, &lk LG(X) LG(C), LB3 LB2)
-COMBO_ANY(pste, &kp LG(V),      LB2 LB1)
+COMBO_ANY(pste, &lk LG(LS(LA(V))) LG(V), LB2 LB1)
 COMBO_LAYER(cloz, &kp LG(W),      LM3 LB3, l_alpha)
 COMBO_LAYER(new,  &kp LG(N),      LM2 LB2, l_alpha)
 COMBO_LAYER(open, &kp LG(O),      LM1 LB1, l_alpha)
@@ -93,10 +84,9 @@ COMBO_LAYER(typeGrav, &kp GRAVE,    RT3 RT4, l_alpha)
 COMBO_LAYER(typeatMk, &lk LS(LA(SEMI)) AT_SIGN,  RT0 RT1, l_alpha) // @ (№ if held)
 COMBO_LAYER(typeUnder, &kp UNDER,   RB1 RB3, l_alpha) // _
 COMBO_LAYER(typeEqual, &lk PRCNT EQUAL,   RB2 RB3, l_alpha) // = (percent if held)
-//COMBO_LAYER(typePercent, &kp PRCNT, RB3 RB4, l_alpha) // percent
 COMBO_LAYER(typeNdash, &lk LA(LS(MINUS)) LA(MINUS), RB0 RB1, l_alpha) // N-dash (M-dash if held)
 COMBO_LAYER(typeMdash, &kp LA(LS(MINUS)), RB0 RB2, l_alpha) // M-dash (minus)
-COMBO_LAYER(typeTilde, &kp TILDE,   RB0 RB4, l_alpha) // tilde (not dead key)
+COMBO_LAYER(typeTilde, &kp TILDE,   RB1 RB4, l_alpha) // tilde (not dead key)
 
 COMBO_LAYER(ligAE, &kp LA(APOS),    RM1 RB1, l_alpha) // ligature æ
 COMBO_LAYER(ligOE, &kp LA(Q),       RM2 RB2, l_alpha) // ligature œ
@@ -119,7 +109,7 @@ COMBO_LAYER(ch,  &Ch,        LM3 LM2, l_alpha) // Ch
 COMBO_LAYER(wh,  &Wh,        LT3 LT2, l_alpha) // Wh
 COMBO_LAYER(sh,  &lk_sh H S, LM4 LM3, l_alpha) // Sh/sion
 COMBO_LAYER(gh,  &lk_gh H G, LT2 LT1, l_alpha) // Gh/ght
-COMBO_LAYER(ph,  &Ph,        RB3 RB4, l_alpha) // Ph
+COMBO_LAYER(ph,  &Ph,        LB3 LB1, l_alpha) // Ph
 
 #ifdef EN_PRONOUN_COMBOS
 //
@@ -133,6 +123,7 @@ COMBO_LAYER(pnIll, &typePnIll,      RM3 LB2, l_alpha) // "I'll "
 COMBO_LAYER(pnId, &typePnId,        RM3 LB1, l_alpha) // "I'd "
 COMBO_LAYER(pnIve, &typePnIve,      RM3 LB0, l_alpha) // "I've "
 
+COMBO_LAYER(pnYour,  &typePnYour,   RB3 LH1, l_alpha) // "Your "
 COMBO_LAYER(pnYoure, &typePnYoure,  RB3 LB3, l_alpha) // "You're "
 COMBO_LAYER(pnYoull, &typePnYoull,  RB3 LB2, l_alpha) // "You'll "
 COMBO_LAYER(pnYoud, &typePnYoud,    RB3 LB1, l_alpha) // "You'd "
