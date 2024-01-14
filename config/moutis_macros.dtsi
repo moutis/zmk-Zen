@@ -1,29 +1,32 @@
  
-
     macros {
 
     ZMK_MACRO(AppSwitch,
-            wait-ms = <10>;
-            tap-ms = <10>;
-        bindings =  <&macro_press &kp LGUI> // leave GUI down to keep menu up
-                , <&macro_tap &kp TAB> // combines with shift fine
-                , <&macro_tap &sk LGUI> // this will release GUI after a timeout
-                , <&macro_release &kp LGUI> // now release the previous hold
-                        ;
+            wait-ms = <50>;
+            tap-ms = <20>;
+        bindings =
+                    <&macro_press &kp RGUI>    // leave GUI down to keep menu up
+                  , <&macro_tap &kp TAB>       // (use press for repeat)
+                  , <&tog l_nav>               // to navigate the app menu
+                  , <&macro_pause_for_release> // hold to keep menu up or for repeat ...
+                  , <&tog l_nav>               // done navigating
+                  , <&macro_tap &skapp LGUI>   // release other GUI after a timeout
+                  , <&macro_release &kp RGUI>  // release the previous hold
+                  ;
         )
-
     ZMK_MACRO(S_AppSwitch,
-            wait-ms = <10>;
-            tap-ms = <10>;
-        bindings =  <&macro_press &kp LSHFT> //
-                , <&macro_press &kp LGUI> // leave GUI down to keep menu up
-                , <&macro_tap &kp TAB> // combines with shift fine
-                , <&macro_tap &sk LGUI> // this will release GUI after a timeout
-                , <&macro_release &kp LGUI> // now release the previous hold
-                , <&macro_release &kp LSHFT> //
-                        ;
+            wait-ms = <50>;
+            tap-ms = <20>;
+        bindings =
+                    <&macro_press &sk RGUI> // leave GUI down to keep menu up
+                  , <&macro_press &kp LSHFT> //
+                  , <&macro_tap &kp TAB> // just tap for no repeat
+                  , <&macro_pause_for_release> // hold for repeat ...
+                  , <&macro_release &kp LSHFT> //
+                  , <&macro_tap &skapp LGUI> // release other GUI after a timeout
+                  , <&macro_release &sk RGUI> // now release the previous hold
+                  ;
         )
-
 
         m_findsel: m_findsel {
             label = "Find Selection";
@@ -144,10 +147,10 @@
         bindings = <&macro_tap &kp X>
                 , <&sl l_akX>;
         )
-    ZMK_MACRO(ak_xc,
+    ZMK_MACRO(ak_xp,
             wait-ms = <10>;
             tap-ms = <10>;
-        bindings = <&macro_tap &kp C>
+        bindings = <&macro_tap &kp P>
                 , <&sl l_akX>;
         )
     ZMK_MACRO(ak_m,
@@ -165,8 +168,7 @@
             wait-ms = <10>;
             tap-ms = <10>;
         bindings = <&kp BSPC &kp L &kp M>
-                    , <&sl l_akM>
-        ;
+                    , <&sl l_akM>;
         )
     ZMK_MACRO(ak_lk,
             wait-ms = <10>;
@@ -191,16 +193,32 @@
         bindings = <&macro_tap &kp B>
                 , <&sl l_akB>;
         )
-    ZMK_MACRO(ak_sf,
+    ZMK_MACRO(ak_sb,
             wait-ms = <10>;
             tap-ms = <10>;
-        bindings = <&kp BSPC &kp S &kp F>;
+        bindings = <&kp BSPC &kp S &kp B>;
+        )
+    ZMK_MACRO(ak_p,
+            wait-ms = <10>;
+            tap-ms = <10>;
+        bindings = <&macro_tap &kp P>
+                , <&sl l_akP>;
+        )
+    ZMK_MACRO(ak_sp,
+            wait-ms = <10>;
+            tap-ms = <10>;
+        bindings = <&kp BSPC &kp S &kp P>;
         )
     ZMK_MACRO(ak_f,
             wait-ms = <10>;
             tap-ms = <10>;
         bindings = <&macro_tap &kp F>
                 , <&sl l_akF>;
+        )
+    ZMK_MACRO(ak_sf,
+            wait-ms = <10>;
+            tap-ms = <10>;
+        bindings = <&kp BSPC &kp S &kp F>;
         )
     ZMK_MACRO(ak_v,
             wait-ms = <10>;
@@ -219,6 +237,12 @@
             wait-ms = <10>;
             tap-ms = <10>;
         bindings = <&kp BSPC &kp C &kp K>;
+        )
+    ZMK_MACRO(ak_c,
+            wait-ms = <10>;
+            tap-ms = <10>;
+        bindings = <&macro_tap &kp C>
+                , <&sl l_akC>;
         )
     ZMK_MACRO(ak_a,
             wait-ms = <10>;
@@ -516,6 +540,18 @@
                 ;
         };
 // YOU
+        typePnYour: pnYour {
+            label = "pnYour";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings = <&macro_tap &kp Y>
+                    , <&macro_release &kp LSHFT>
+                    , <&macro_release &kp RSHFT>
+                    , <&macro_tap &kp O &kp U &kp R &kp SPACE>
+                ;
+        };
         typePnYoure: pnYoure {
             label = "pnYoure";
             compatible = "zmk,behavior-macro";

@@ -22,15 +22,7 @@ LB5 │ LB4 LB3 LB2 LB1 LB0 │ │ RB0 RB1 RB2 RB3 RB4 │ RB5
     ╰───────╮ LH3 LH2 LH1 | | RH1 RH2 RH3 ╭───────╯
             ╰─────────────╯ ╰─────────────╯
 */
-/*  Base (alpha) Layer  Hands Down Vibranium-vv
-    Building for a 36/42 key board
-    ╭─────────────────────╮ ╭──────────────────────╮
-LT5 │  X   W   M   G  "[  │ │  #$  .:  ']   J   B  │ RT5
-LM5 │  S   C   N   T   K  | |  ,;   A   E   I   H  │ RM5
-LB5 │  V   P   L   D   /* │ │  -+   U   O   Y   F  │ RB5
-    ╰──────╮  App BSP  R  │ │  SPC RET  TAB ╭──────╯
-           ╰──────────────╯ ╰───────────────╯
-*/
+
 #define LT0 5
 #define LT1 4
 #define LT2 3
@@ -89,24 +81,26 @@ LB5 │  V   P   L   D   /* │ │  -+   U   O   Y   F  │ RB5
 #define l_akM   2
 #define l_akX   3
 #define l_akT   4
-#define l_akK   5
-#define l_akD   6
-#define l_akW   7
-#define l_akF   8
-#define l_akB   9
-#define l_akV   10
-#define l_akA   11
-#define l_akU   12
-#define l_akE   13
-#define l_akO   14
-#define l_akI   15
-#define l_akJ   16
-#define l_akDot 17
-#define l_nav   18
-#define l_sym   19
-#define l_fn    20
+#define l_akC   5
+#define l_akK   6
+#define l_akD   7
+#define l_akW   8
+#define l_akF   9
+#define l_akP   10
+#define l_akB   11
+#define l_akV   12
+#define l_akJ   13
+#define l_akA   14
+#define l_akU   15
+#define l_akE   16
+#define l_akO   17
+#define l_akI   18
+#define l_akDot 19
+#define l_sym   20
 #define l_num   21
-#define l_cfg   22
+#define l_fun   22
+#define l_nav   23
+#define l_cfg   24
 
 #define my_tapping_term 170
 #define my_quick_tapping_term 112
@@ -120,11 +114,6 @@ LB5 │  V   P   L   D   /* │ │  -+   U   O   Y   F  │ RB5
 };
 &caps_word {
     continue-list = <UNDER MINUS BSPC DEL LEFT RIGHT>;
-};
-&sk {
-    release-after-ms = <1000>;
-#    quick-release;
-    /delete-property/ ignore-modifiers;
 };
 
 
